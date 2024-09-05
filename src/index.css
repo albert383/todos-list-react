@@ -6,8 +6,9 @@ html {
   box-sizing: inherit;
 }
 
-.body {
+html, body {
   font-family: "Roboto", sans-serif;
   background-color: #eeedef;
   word-break: break-word;
+  height: 100%;
 }
