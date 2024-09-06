@@ -11,5 +11,3 @@ const Section = ({ title, body, extraHeaderContent }) => (
 );
 
 export default Section;
-//<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />
-//<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />
