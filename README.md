@@ -26,12 +26,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Usage Instructions
 
+   ![Adding Task](https://zapodaj.net/images/d281451e4fa20.gif)
+
 1. **Adding a New Task:**
 
    - Enter the task description in the input field under the "Dodaj nowe zadanie" (Add new task) section.
    - Click the "dodaj zadanie" (Add task) button or press Enter to add the task to the list.
-
-   ![Adding Task](https://ibb.co/kDRVkKJ)
 
 2. **Marking a Task as Done:**
 -Click the green checkmark button next to the task you want to mark as done.
