@@ -22,11 +22,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Automatically focusing on the input field after adding a task.
 - Responsive design for various screen sizes (thanks to mediaquery, flexbox and grid).
 - Using emoji with a checkmark to confirm task completion.
+- Local storage for all old and new tasks.
   
 
 ## Usage Instructions
 
-   ![Adding Task](https://zapodaj.net/images/d281451e4fa20.gif)
+   ![Adding Task](https://zapodaj.net/images/b7c45e4c7f5ba.gif)
 
 1. **Adding a New Task:**
 
