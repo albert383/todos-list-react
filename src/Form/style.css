@@ -25,12 +25,12 @@
     background-color: darkcyan;
     border: 2px solid transparent;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.3s;
 }
 
 .form__button:hover {
     background-color: rgb(0, 163, 163);
-    transform: scale(107%);
+    transform: scale(102%);
 }
 
 .form__button:active {
