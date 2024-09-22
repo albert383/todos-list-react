@@ -14,13 +14,13 @@ export const Item = styled.li`
     padding: 10px 0;
     border-bottom: 1px solid #dddddd;
 
-    ${({ hidden }) => hidden && css`
+    ${({ $hidden }) => $hidden && css`
         display: none;
     `}
 `;
 
 export const Content = styled.span`
-    ${({ done }) => done && css`
+    ${({ $done }) => $done && css`
         text-decoration: line-through;
     `}
 `;
@@ -36,7 +36,7 @@ export const Button = styled.button`
     height: 30px;
     transition: 0.3s;
 
-${({ toggleDone }) => toggleDone && css`
+${({ $toggleDone }) => $toggleDone && css`
     color: #ffffff;
     background: green;
 
@@ -45,7 +45,7 @@ ${({ toggleDone }) => toggleDone && css`
         background-color: rgb(0, 148, 0);
         transition: 0.3s;
     }
-    
+
     &:active {
         color: #ffffff;
         background-color: rgb(0, 177, 0);
@@ -53,7 +53,7 @@ ${({ toggleDone }) => toggleDone && css`
     }
 `}
 
-${({ remove }) => remove && css`
+${({ $remove }) => $remove && css`
     color: #ffffff;
     background-color: red;
 
