@@ -21,12 +21,6 @@
     }
 }
 
-.section__list {
-    list-style: none;
-    margin: 0;
-    padding: 20px;
-}
-
 @media (max-width: 767px) {
     .section__list {
         padding: 10px;
@@ -36,21 +30,4 @@
 .section__title {
     margin: 0;
     font-size: 20px;
-}
-
-.section__listItem {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-gap: 10px;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #dddddd;
-}
-
-.section__listItemText--done {
-    text-decoration: line-through;
-}
-
-.section__listItem--hidden {
-    display: none;
 }
