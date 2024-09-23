@@ -1,31 +1,28 @@
-.buttons {
+import styled from "styled-components";
+
+export const ButtonsWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-}
 
-@media (max-width: 767px) {
-    .buttons {
+    @media (max-width: 767px) {
         flex-direction: column;
     }
-}
+`;
 
-.buttons__button {
+export const ButtonStyled = styled.button`
     background-color: transparent;
     color: teal;
     border: none;
     margin: 0 0 0 20px;
     transition: color 1s;
     cursor: pointer;
-}
 
-@media (max-width: 767px) {
-    .buttons__button {
-        flex-direction: column;
+    @media (max-width: 767px) {
         margin: 10px;
     }
-}
 
-.buttons__button:disabled {
-    color: rgb(155, 155, 155);
-}
+    &:disabled {
+        color: rgb(155, 155, 155);
+    }
+`;
