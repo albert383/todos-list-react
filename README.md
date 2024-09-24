@@ -23,6 +23,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Responsive design for various screen sizes (thanks to mediaquery, flexbox and grid).
 - Using emoji with a checkmark to confirm task completion.
 - Local storage for all old and new tasks.
+- All styles have been migrated to styled-components, making it easier to manage styles and ensuring modularity.
   
 
 ## Usage Instructions
