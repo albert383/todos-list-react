@@ -28,6 +28,6 @@ export const SectionTitle = styled.h2`
 
 export const SectionList = styled.div`
     @media (max-width: 767px) {
-        padding: 10px;
+        padding: 5px;
     }
 `;

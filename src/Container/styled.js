@@ -6,6 +6,6 @@ export const ContainerWrapper = styled.main`
     margin: 0 auto;
 
     @media (max-width: 767px) {
-        padding: 10px;
+        padding: 5px;
     }
 `;

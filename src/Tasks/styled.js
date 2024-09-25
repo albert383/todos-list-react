@@ -4,6 +4,10 @@ export const List = styled.ul`
     list-style: none;
     margin: 0;
     padding: 20px;
+
+    @media (max-width: 767px) {
+        padding: 5px;
+
 `;
 
 export const Item = styled.li`
