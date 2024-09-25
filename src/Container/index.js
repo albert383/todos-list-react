@@ -1,9 +1,10 @@
 import { ContainerWrapper } from "./styled";
 
-const Container = ({ children }) => (
-    <ContainerWrapper>
-        {children}
-    </ContainerWrapper>
-);
-
-export default Container;
+function App() {
+    return (
+        <ContainerWrapper>
+            <Header title="Lista zadań" />
+            {/* Treść aplikacji */}
+        </ContainerWrapper>
+    );
+}
