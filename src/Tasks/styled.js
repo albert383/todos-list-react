@@ -5,7 +5,7 @@ export const List = styled.ul`
     margin: 0;
     padding: 20px;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         padding: 5px;
     }
 `;
@@ -16,7 +16,7 @@ export const Item = styled.li`
     grid-gap: 10px;
     align-items: center;
     padding: 10px 0;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid ${({ theme }) => theme.color.alto};
 
     ${({ $hidden }) => $hidden && css`
         display: none;
@@ -30,10 +30,10 @@ export const Content = styled.span`
 `;
 
 export const Button = styled.button`
-    background-color: transparent;
-    color: teal;
+    background-color: ${({ theme }) => theme.color.transparent};
+    color: ${({ theme }) => theme.color.teal};
     border: none;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid ${({ theme }) => theme.color.transparent};
     cursor: pointer;
     font-size: 1em;
     width: 30px;
@@ -41,30 +41,28 @@ export const Button = styled.button`
     transition: 0.3s;
 
 ${({ $toggleDone }) => $toggleDone && css`
-    color: #ffffff;
-    background: green;
+    color: ${({ theme }) => theme.color.white};
+    background: ${({ theme }) => theme.color.green};
 
     &:hover {
-        color: #ffffff;
-        background-color: rgb(0, 148, 0);
-        transition: 0.3s;
+        filter: brightness(115%);
     }
 
     &:active {
-        color: #ffffff;
-        background-color: rgb(0, 177, 0);
-        transition: 0.3s;
+        filter: brightness(130%);
     }
 `}
 
 ${({ $remove }) => $remove && css`
-    color: #ffffff;
-    background-color: red;
+    color: ${({ theme }) => theme.color.white};
+    background-color: ${({ theme }) => theme.color.red};
 
     &:hover {
-        color: #ffffff;
-        background-color: rgb(255, 81, 81);
-        transition: 0.3s;
+        filter: brightness(115%)
+    }
+
+    &:active {
+        filter: brightness(130%)
     }
 `};
 `;

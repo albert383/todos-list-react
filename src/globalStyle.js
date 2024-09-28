@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
 
     html, body {
         font-family: "Roboto", sans-serif;
-        background-color: #eeedef;
+        background-color: ${({ theme }) => theme.color.athensGray};
         word-break: break-word;
         height: 100%;
     }
