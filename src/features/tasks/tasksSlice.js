@@ -29,10 +29,13 @@ const tasksSlice = createSlice({
             tasks[index].done = !tasks[index].done;
         },
         setAllDone: ({ tasks }) => {
-            tasks.forEach(task => task.done = true);
+            for (const task of tasks) {
+                task.done = true;
+            }
         },
-        removeTask: ({ tasks }, { payload }) => {
-            return { tasks: tasks.filter(task => task.id !== payload) };
+        removeTask: ({ tasks }, { payload: taskID }) => {
+            const index = tasks.findIndex(({ id }) => id === taskID);
+            tasks.splice(index, 1);
         },
     },
 });
