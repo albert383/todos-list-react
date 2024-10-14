@@ -1,17 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { getTasksFromLocalStorage } from "./tasksLocalStorage";
 
-const initialTasks = [
-    {
-        id: 1,
-        content: "Przykładowe zadanie",
-        done: true,
-    },
-    {
-        id: 2,
-        content: "Drugie przykładowe zadanie",
-        done: false,
-    },
-];
+const initialTasks = getTasksFromLocalStorage();
 
 const tasksSlice = createSlice({
     name: 'tasks',
@@ -41,6 +31,10 @@ const tasksSlice = createSlice({
             const index = tasks.findIndex(({ id }) => id === taskID);
             tasks.splice(index, 1);
         },
+        fetchExampleTasks: () => {},
+        setTasks: (state, { payload: tasks }) => {
+            state.tasks = tasks;
+        },
     },
 });
 
@@ -49,7 +43,9 @@ export const {
     toggleHideDone,
     toggleTaskDone,
     removeTask,
-    setAllDone
+    setAllDone,
+    fetchExampleTasks,
+    setTasks,
 } = tasksSlice.actions;
 
 const selectTasksState = state => state.tasks;
