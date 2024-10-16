@@ -27,6 +27,8 @@ export const SectionTitle = styled.h2`
 `;
 
 export const SectionList = styled.div`
+    padding:20px;
+
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         padding: 5px;
     }

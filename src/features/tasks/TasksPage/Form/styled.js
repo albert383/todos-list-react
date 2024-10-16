@@ -4,7 +4,6 @@ export const FormWrapper = styled.form`
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     padding: 10px;

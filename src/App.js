@@ -1,18 +1,19 @@
-import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
+import { BrowserRouter, NavLink, Switch, Route } from "react-router-dom";
 import Tasks from "./features/tasks/Tasks";
 import Author from "./features/author/Author";
+import { List, Item } from "./features/tasks/TasksPage/TaskList/styled";
 
 const App = () => (
   <BrowserRouter>
     <nav>
-      <ul>
-        <li>
-          <Link to="/zadania">Zadania</Link>
-        </li>
-        <li>
-          <Link to="/autor">O autorze</Link>
-        </li>
-      </ul>
+      <List $nav>
+        <Item $nav>
+          <NavLink to="/zadania" activeClassName="active">Zadania</NavLink>
+        </Item>
+        <Item $nav>
+          <NavLink to="/autor" activeClassName="active">O autorze</NavLink>
+        </Item>
+      </List>
       <Switch>
         <Route path="/zadania">
           <Tasks />
