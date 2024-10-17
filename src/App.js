@@ -16,7 +16,7 @@ const App = () => (
         </Item>
       </List>
       <Switch>
-      <Route path="/zadania/:id">
+        <Route path="/zadania/:id">
           <TaskPage />
         </Route>
         <Route path="/zadania">
