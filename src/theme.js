@@ -10,6 +10,7 @@ export const theme = {
         athensGray: "#EEEDEF",
         dustyGray: "#9B9B9B",
         transparent: "transparent",
+        black: "#000000",
 
     },
 breakpoint: {
