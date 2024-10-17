@@ -1,10 +1,10 @@
-import { BrowserRouter, NavLink, Switch, Route } from "react-router-dom";
+import { HashRouter, NavLink, Switch, Route } from "react-router-dom";
 import Tasks from "./features/tasks/Tasks";
 import Author from "./features/author/Author";
 import { List, Item } from "./features/tasks/TasksPage/TaskList/styled";
 
 const App = () => (
-  <BrowserRouter>
+  <HashRouter>
     <nav>
       <List $nav>
         <Item $nav>
@@ -23,7 +23,7 @@ const App = () => (
         </Route>
       </Switch>
     </nav>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default App;
