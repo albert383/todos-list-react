@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const List = styled.ul`
     list-style: none;
     margin: 0;
-    padding: 20px;
+    padding: 20px 0;
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         padding: 10px;
