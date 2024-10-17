@@ -42,4 +42,9 @@ export const FormButton = styled.button`
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         flex-basis: 100%;
     }
+
+    ${({ $alignRight }) => $alignRight && `
+        display: block;
+        margin-left: auto;
+    `}
 `;

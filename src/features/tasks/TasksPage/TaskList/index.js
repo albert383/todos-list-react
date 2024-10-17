@@ -1,4 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import { List, Item, Content, Button } from "./styled";
 import { selectTasks, toggleTaskDone, removeTask, selectHideDone } from "../../tasksSlice";
 
@@ -22,7 +23,7 @@ const TaskList = () => {
             {task.done ? "✔︎" : ""}
           </Button>
           <Content $done={task.done}>
-            {task.content}
+            <Link to={`/zadania/${task.id}`}>{task.content}</Link>
           </Content>
           <Button
             $remove

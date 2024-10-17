@@ -31,6 +31,11 @@ export const Item = styled.li`
     align-items: center;
     padding: 10px 0;
     border-bottom: 1px solid ${({ theme }) => theme.color.alto};
+    a {
+        text-decoration: none;
+        color: ${({ theme }) => theme.color.black};
+
+    }
 
     ${({ $hidden }) => $hidden && css`
         display: none;
