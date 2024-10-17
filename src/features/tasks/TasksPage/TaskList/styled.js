@@ -34,6 +34,7 @@ export const Item = styled.li`
     a {
         text-decoration: none;
         color: ${({ theme }) => theme.color.black};
+        cursor: pointer;
 
     }
 
