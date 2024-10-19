@@ -36,7 +36,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Usage Instructions
 
-   ![Adding Task](https://zapodaj.net/images/99b9c4b1c2576.gif)
+   ![Adding Task](https://zapodaj.net/images/fb6f0f0d7d85b.gif)
 
 1. **Adding a New Task:**
 
