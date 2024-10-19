@@ -25,11 +25,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Using emoji with a checkmark to confirm task completion.
 - Local storage for all old and new tasks.
 - All styles have been migrated to styled-components, making it easier to manage styles and ensuring modularity.
+- **Task filtering** has been added using URL query parameters with custom React hooks (`useQueryParameter` and `useReplaceQueryParameter`).
+- Added "Fetch Example Tasks" button, which displays a loading state ("Ładowanie...") for at least 2000ms while loading tasks.
+- Implemented Redux-Saga to handle side effects such as saving tasks to `localStorage` and fetching example tasks.
+- Added an "About Author" page with navigation.
+- Improved navigation:
+  - Active links are now bold.
+  - Links to tasks have been styled to remove underlining and use the color teal.
   
 
 ## Usage Instructions
 
-   ![Adding Task](https://zapodaj.net/images/b7c45e4c7f5ba.gif)
+   ![Adding Task](https://zapodaj.net/images/da702a43e6ad0.gif)
 
 1. **Adding a New Task:**
 
@@ -57,7 +64,25 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
    - The application uses **Redux Toolkit** for managing the global state.
    - This ensures that task state is managed centrally, and the actions (such as adding, removing, or toggling tasks) are dispatched and handled globally.
 
-7. **Responsive Design:**
+7. **Task Filtering:**
+   - You can filter tasks using the input field labeled "Filtruj zadania".
+   - The search query is reflected in the URL as a query parameter (`?szukaj=...`).
+   - Filtering is implemented using custom hooks (`useQueryParameter` and `useReplaceQueryParameter`) to manage the query parameters.
+
+8. **Fetching Example Tasks:**
+   - Click the "Pobierz przykładowe zadania" (Fetch Example Tasks) button.
+   - While the tasks are being fetched, the button will display "Ładowanie..." for at least 2000ms.
+
+9. **Saving to Local Storage with Redux-Saga:**
+   - Tasks are automatically saved to `localStorage` after any action is performed (adding, removing, or editing tasks).
+   - Redux-Saga handles the side effects of saving tasks.
+
+10. **Navigation:**
+   - The app now includes an "About Author" page.
+   - Navigation links to tasks are not underlined and use the color teal.
+   - Active links are displayed in bold.
+
+11. **Responsive Design:**
    - The layout is fully responsive, adapting to various screen sizes for a seamless experience on desktops, tablets, and mobile devices.
    - The design uses media queries, flexbox, and grid to ensure the layout remains user-friendly across different devices and orientations.
 
