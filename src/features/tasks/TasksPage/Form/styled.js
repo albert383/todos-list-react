@@ -18,6 +18,7 @@ export const Input = styled.input`
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         flex-basis: 100%;
+        width: calc(100% - 20px);
     }
 `;
 
