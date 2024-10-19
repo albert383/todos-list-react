@@ -33,7 +33,7 @@ export const Item = styled.li`
     border-bottom: 1px solid ${({ theme }) => theme.color.alto};
     a {
         text-decoration: none;
-        color: ${({ theme }) => theme.color.black};
+        color: ${({ theme }) => theme.color.teal};
         cursor: pointer;
 
     }
@@ -49,7 +49,7 @@ export const Item = styled.li`
 
         a {
             text-decoration: none;
-            color: white;
+            color: ${({ theme }) => theme.color.white};
             font-weight: 300;
     `}
 `;
