@@ -8,6 +8,7 @@ import { ButtonStyled } from "./Buttons/styled";
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import { ContainerWrapper } from "../../../common/Container/styled";
+import Search from "./Search";
 
 
 
@@ -48,6 +49,10 @@ function TasksPage() {
             {error && <p style={{ color: "red" }}>Upps, pobieranie nie powiodło się. Spróbuj ponownie później.</p>}
           </>
         }
+      />
+      <Section
+        title="Wyszukiwarka"
+        body={<Search />}
       />
       <Section
         title="Lista zadań"
