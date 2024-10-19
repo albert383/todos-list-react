@@ -50,16 +50,7 @@ export const Item = styled.li`
         a {
             text-decoration: none;
             color: white;
-            font-weight: normal;
-
-            &:hover {
-                text-decoration: none;
-            }
-            
-            &.active {
-                font-weight: bold;
-            }
-        }
+            font-weight: 300;
     `}
 `;
 
