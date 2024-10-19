@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/todos-list-react/static/js/main.b3403733.js",
+    "main.js": "/todos-list-react/static/js/main.d3f1f6dd.js",
     "index.html": "/todos-list-react/index.html",
-    "main.b3403733.js.map": "/todos-list-react/static/js/main.b3403733.js.map"
+    "main.d3f1f6dd.js.map": "/todos-list-react/static/js/main.d3f1f6dd.js.map"
   },
   "entrypoints": [
-    "static/js/main.b3403733.js"
+    "static/js/main.d3f1f6dd.js"
   ]
 }
