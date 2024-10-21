@@ -5,6 +5,7 @@ import { useParams, useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { getTaskById } from "../tasksSlice";
 import { FormButton } from "../TasksPage/Form/styled";
+import { toTasks } from "../../../routes";
 
 function TaskPage() {
     const { id } = useParams();
@@ -12,7 +13,7 @@ function TaskPage() {
     const history = useHistory();
 
     const handleGoBack = () => {
-        history.push("/zadania");
+        history.push(toTasks());
     };
 
     return (
