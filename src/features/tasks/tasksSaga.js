@@ -18,7 +18,6 @@ function* saveTasksInLocaleStorageHandler() {
 }
 
 export function* tasksSaga() {
-    console.log("Saga jest podłączona");
     yield takeEvery(fetchExampleTasks.type, fetchExampleTasksHandler);
     yield takeEvery("*", saveTasksInLocaleStorageHandler);
 }
