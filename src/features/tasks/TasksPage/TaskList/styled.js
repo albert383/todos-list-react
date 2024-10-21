@@ -8,20 +8,6 @@ export const List = styled.ul`
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         padding: 10px;
     }
-
-    ${({ $nav }) => $nav && css`
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: center;
-        grid-gap: 10px;
-        background-color: teal;
-        padding: 20px;
-
-        @media (max-width: 500px) {
-            grid-template-columns: 1fr;
-            justify-items: center;
-        }
-    `}
 `;
 
 export const Item = styled.li`
@@ -40,17 +26,6 @@ export const Item = styled.li`
 
     ${({ $hidden }) => $hidden && css`
         display: none;
-    `}
-
-    ${({ $nav }) => $nav && css`
-        padding: 0;
-        border-bottom: none;
-        font-size: 1.5em;
-
-        a {
-            text-decoration: none;
-            color: ${({ theme }) => theme.color.white};
-            font-weight: 300;
     `}
 `;
 
