@@ -1,6 +1,16 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
+
+export const StyledNavLink = styled(NavLink)`
+    text-decoration: none;
+    color: ${({ theme }) => theme.color.white};
+
+    &.active {
+        font-weight: bold;
+    }
+`;
+
 export const List = styled.ul`
     list-style: none;
     margin: 0;
@@ -53,14 +63,5 @@ export const Item = styled.li`
             color: ${({ theme }) => theme.color.white};
             font-weight: 300;
         }
-    }
-`;
-
-export const StyledNavLink = styled(NavLink)`
-    text-decoration: none;
-    color: ${({ theme }) => theme.color.white};
-
-    &.active {
-        font-weight: bold;
     }
 `;
