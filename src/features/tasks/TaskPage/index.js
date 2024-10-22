@@ -20,14 +20,12 @@ function TaskPage() {
         <ContainerWrapper>
             <Header title="Szczegóły" />
             <Section
-                title={task ? task.content : "Nie znaleziono zadania 😥"}
-                body={
+                title={task ? task.content : "Nie znaleziono takiego zadania 😥"}
+                body={!!task && (
                     <>
-                        <strong>Ukończono:</strong> {
-                            task ? (task.done ? "Tak" : "Nie") : "Nie wiadomo"
-                        }
+                        <strong>Ukończono</strong>: {task.done ? "Tak" : "Nie"}
                     </>
-                }
+                )}
             />
             <FormButton onClick={handleGoBack} $alignRight>Wróć</FormButton>
         </ContainerWrapper>
