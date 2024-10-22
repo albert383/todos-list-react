@@ -20,18 +20,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Button Show/Hide done tasks.
 - Button Finish all tasks.
 - Automatically focusing on the input field after adding a task.
-- **Redux state management** for tasks (instead of local state).
-- Responsive design for various screen sizes (thanks to mediaquery, flexbox, and grid).
-- Using emoji with a checkmark to confirm task completion.
-- Local storage for all old and new tasks.
-- All styles have been migrated to styled-components, making it easier to manage styles and ensuring modularity.
-- **Task filtering** has been added using URL query parameters with custom React hooks (`useQueryParameter` and `useReplaceQueryParameter`).
-- Added "Fetch Example Tasks" button, which displays a loading state ("Ładowanie...") for at least 2000ms while loading tasks.
-- Implemented Redux-Saga to handle side effects such as saving tasks to `localStorage` and fetching example tasks.
-- Added an "About Author" page with navigation.
-- Improved navigation:
-  - Active links are now bold.
-  - Links to tasks have been styled to remove underlining and use the color teal.
+- **Redux Toolkit** for global state management.
+- **Redux-Saga** for handling side effects such as fetching example tasks and saving tasks to `localStorage`.
+- Task filtering via query parameters with custom hooks (`useQueryParameter`, `useReplaceQueryParameter`).
+- A responsive design for various screen sizes (thanks to media queries, flexbox, and grid).
+- A **Fetch Example Tasks** button with a 2000ms loading indicator and error handling.
+- Local storage integration for persisting tasks between sessions.
+- All styles have been migrated to styled-components for easier management and modularity.
+- **Navigation:**
+  - Active links are bolded.
+  - Task links are styled with no underlining and the color teal.
+  - Includes an "About Author" page.
   
 
 ## Usage Instructions
