@@ -35,7 +35,7 @@ export const Content = styled.span`
     `}
 `;
 
-export const Button = styled.button`
+export const StyledButton = styled.button`
     background-color: ${({ theme }) => theme.color.transparent};
     color: ${({ theme }) => theme.color.teal};
     border: none;
